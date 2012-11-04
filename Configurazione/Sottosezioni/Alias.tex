@@ -1,5 +1,5 @@
 \subsection{Alias}
-Se con il proprio progetto ci si appoggia a server esterni, come github.com, per condividere il progetto con altri collaboratori è possibile definire un alias per evitare di ripetere l'inserimento dell'URL ad ogni invio di modifiche.
+Se con il proprio progetto ci si appoggia a server esterni, come github.com, per condividere il progetto con altri collaboratori è possibile definire un alias per evitare di ripetere l'inserimento dell'URL ad ogni invio/ricezione di modifiche.
 
 Per definire un alias eseguire il seguente comando all'interno di uno specifico repository:
 
@@ -16,3 +16,11 @@ Per rimuovere un alias è sufficiente il seguente comando all'interno del reposi
 \end{center}
 
 dove ''alias'' va sostituito con l'alias da rimuovere.
+
+Per visualizzare gli alias configurati in un particolare repository digitare all'interno di esso, il comando:
+
+\begin{center}
+\texttt{git remote -v}
+\end{center}
+
+l'opzione ''-v'' specifica che oltre ai nomi vogliamo visionare l'URL.
