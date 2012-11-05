@@ -13,7 +13,7 @@ Quando viene eseguito il comando di ''commit'', Git calcola il checksum di ogni 
 \item un oggetto \textit{blob} per i contenuti di ogni singolo file nell'albero;
 \item un oggetto \textit{albero} che elenca i contenuti della directory e specifica i nomi dei file che devono essere salvati mediante l'oggetto \textit{blob};
 \item un oggetto \textit{commit} con un puntatore alla radice dell'albero e tutti i suoi metadati.
-\end{center}
+\end{itemize}
 
 Se ora si eseguono dei cambiamenti, ad uno o più dei precedenti file, e successivamente ne eseguiamo il commit, l'oggetto ''commit'' memorizzato avrà un puntatore al rpecedente oggetto ''commit''.
 
