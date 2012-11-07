@@ -5,7 +5,7 @@ Le regole per comporre questo file sono le seguenti:
 
 \begin{itemize}
 \item le linee che iniziano con il cancelletto (\#)  sono commenti, quindi ignorati;
-\item espressioni regolari utilizzata dalla shell per individuare file o gruppi di file;
+\item espressioni regolari utilizzate dalla shell per individuare file o gruppi di file;
 \item per indicare cartelle di file da ignorare terminalre la riga con il carattere slash (/);
 \item per negare un pattern farlo precedere da un punto esclamativo (!)
 \end{itemize}
@@ -19,7 +19,7 @@ Questo è un esempio di file .gitignore:
 build/\\
 doc/*.txt\\
 
-La prima riga rappresenta un commento e come dice verrà ignorata, la seconda riga dice di non includere tutti i file con estensione ''a'', la terza riga dice di ammettere il file ''lib.a'', la quarta riga ignora solamente il file ''TODO'' nella directory principale, la quinta riga dice di non includere la sottodirectory ''build'' con i relativi file mentre l'ultima riga dice di ignorare tutti i file con estensione ''.txt'' che risiedono all'ienterno della sottodirectory ''doc''.
+La prima riga rappresenta un commento e come dice verrà ignorata, la seconda riga dice di non includere tutti i file con estensione ''a'', la terza riga dice di ammettere il file ''lib.a'', la quarta riga ignora solamente il file ''TODO'' nella directory principale, la quinta riga dice di non includere la sottodirectory ''build'' con i relativi file mentre l'ultima riga dice di ignorare tutti i file con estensione ''.txt'' che risiedono all'ienterno della sottodirectory ''doc'' presente nella cartella principale.
 
 Dopo aver composto questo file siamo pronti per informare Git che deve consultare questo file durante le operazioni di staging e commit, dalla cartella principale diamo il seguente comando:
 

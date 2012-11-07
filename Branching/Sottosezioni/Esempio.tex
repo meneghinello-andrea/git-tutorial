@@ -1,5 +1,5 @@
 \subsection{Esempio di utilizzo dell'operazione di branching-merging}
-Supponiamo tu stia lavarando su un sito web, e che nella cartella di Git sono presenti già diversi commit. Ora decidi che lavorerai ad una particolare richiesta, chiamate per esempio \textit{richiesta \#42}. Siccome non hai la certezza che tutto funzioni subito decidi di creare un nuovo ramo per non sporcare la soluzione web fino ad ora ottenuta. Per creare e spostarsi direttamente nel nuovo ramo puoi utilizzare come unico comando il seguente:
+Supponiamo tu stia lavarando su un sito web, e che nella cartella di Git sono presenti già diversi commit. Ora decidi che lavorerai ad una particolare richiesta, chiamata per esempio \textit{richiesta \#42}. Siccome non hai la certezza che tutto funzioni subito decidi di creare un nuovo ramo per non sporcare la soluzione web fino ad ora ottenuta. Per creare e spostarsi direttamente nel nuovo ramo puoi utilizzare come unico comando il seguente:
 
 \begin{center}
 \texttt{git checkout -b NomeNuovoRamo}
@@ -21,7 +21,7 @@ dove ''NomeRamo'' è il nome del ramo che dobbiamo fondere con il ramo attuale, 
 
 Nell'esecuzione del comando di ''merging'' si può notare la fase di \textbf{''Fast Forward''}. Dato che il commit di unione punta direttamente a monte rispetto al commit in cui ci si trova, Git muove il puntatore in avanti. Per parafrasare in un altro modo, quando provi ad unire un commit con un commit che può essere portato al primo commit della storia, Git semplifica le cose muovendo il puntatore in avanti perchè non c'è un lavoro differente da fondere assieme. Questo sistema è definito ''fast forward''.
 
-A questo punto che le modifiche che hanno risolto il problema sono agganciate al ramo master, quindi il ramo creato per risolverle non è più necessario può essere quindi distrutto attraverso il comando:
+A questo punto le modifiche che hanno risolto il problema sono agganciate al ramo master, quindi il ramo creato per risolverle non è più necessario può essere quindi distrutto attraverso il comando:
 
 \begin{center}
 \texttt{git branch -d NomeRamo}
